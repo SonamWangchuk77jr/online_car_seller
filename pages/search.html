@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Online Car Seller</title>
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+<body>
+    <!-- Header Section -->
+     <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img class="logo" src="./images/logo.png" width="200" height="80" alt="logo">
+            </a>
+            <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+
+            <ul class="nav-items-list">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="seller-registration.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a id="login" href="seller-login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+     </header>
+     <!-- Body Section -->
+      <!-- Search Form -->
+       <div class="search-banner">
+        <form class="search-form" action="">
+            <h2>Find Your Dream Car</h2>
+            <div id="search-form">
+                <div class="input-group">
+                    <input class="form-input" type="text" id="carModel" placeholder="Enter car model">
+                    <div id="carModelError" class="error-message"></div>
+                </div>
+                <div class="input-group">
+                    <input class="form-input" type="text" id="location" placeholder="Enter location">
+                    <div id="locationError" class="error-message"></div>
+                </div>
+                <div>
+                    <button type="button" id="searchBtn">Search</button>
+                </div>
+            </div>
+        </form>        
+       </div>
+
+     <!-- Footer Section -->
+      <footer class="footer-section">
+        <p>&copy; 2024 Online Car Sale. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@onlinecarsale.com">info@onlinecarsale.com</a></p>
+      </footer>
+
+      <script src="./js/index.js"></script>
+      <script src="./js/search.js"></script>
+</body>
+</html>

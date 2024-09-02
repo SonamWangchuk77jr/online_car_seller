@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Nav Bar css */
+.navbar {
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    position: relative;
+}
+
+.nav-items-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #FD1D1A;
+}
+
+#login {
+    background: #FD1D1A;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    color: #FD1D1A !important;
+    font-weight: 700;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* registraion Form Container */
+.registraionFormContainer{
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('../images/registerBg\ 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#registration-image{
+    object-fit: contain;
+    width: 600px;
+    padding: 40px;
+}
+.registration-form{
+    width: 30%;
+    background-color: #ffffffd8;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+@media (max-width: 1300px) {
+    .registration-form { width: 100%; }
+    .form-input,#registerBtn{
+        width: 90% !important;
+    }
+}
+.form-input{
+    padding:10px;
+    width: 300px;
+    border-radius: 10px;
+    border:1px solid #092145;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+#registerBtn{
+    width: 300px;
+    padding: 10px;
+    background: #FD1D1A;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+    display: none; 
+}
+.footer-section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 50px;
+    background-color: #092145;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.footer-section a{
+    color: #eee;
+}
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .our-services, .contact-section{
+        width: 100%; 
+        margin-right: 0;
+        margin-top: 0;
+        padding: 15px;
+    }
+    .our-services::after{
+        display: none;
+    }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-items-list {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+        width: 100%;
+        background: #eee;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 9999;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    #login {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding-inline: 10px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .nav-items-list {
+        gap: 10px;
+    }
+
+    #login {
+        font-size: 12px;
+        height: 35px;
+    }
+}

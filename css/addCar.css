@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Nav Bar css */
+.navbar{
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+}
+.nav-items-list{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+#profile{
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    width: 50px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FD1D1A;
+}
+#logout{
+    background: #FD1D1A;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add car section */
+.add-car-section{
+    display: flex;
+    justify-content: space-between;
+}
+.left-section{
+    width: 60%;
+    min-height: 100vh;
+}
+.left-section> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-section{
+    width: 40%;
+    min-height: 100vh;
+    background: #AF5530;
+    padding: 20px;
+}
+#addCarForm{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.form-input{
+    padding:10px;
+    width: 95%;
+    border-radius: 10px;
+    border:1px solid #092145;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+#addCarBtn{
+    width: 95%;
+    padding: 10px;
+    background: #FD1D1A;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+    display: none; 
+}
+.footer-section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 50px;
+    background-color: #092145;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.footer-section a{
+    color: #eee;
+}
+@media (max-width:1000px) {
+    .nav-item a, #profile{
+        display: none;
+    }
+    #welcomeText{
+        display: none;
+    }
+    .left-section{
+        display: none;
+    }
+    .right-section{
+        width: 100%;
+        min-height: 100vh;
+    }
+}

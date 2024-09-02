@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add car | Online Car Seller</title>
+    <link rel="stylesheet" href="./css/addCar.css">
+</head>
+<body>
+    <!-- Header Section -->
+     <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img class="logo" src="./images/logo.png" width="200" height="80" alt="logo">
+            </a>
+            <ul class="nav-items-list">
+                <li id="welcomeText" class="nav-item">
+                    Welcome Back!
+                </li>
+                <li id="profile">
+                    <img width="30" height="30" src="./images/profile.png" alt="profile-avatar">
+                </li>
+                <li class="nav-item">
+                    <a id="logout" href="seller-login.html">Logout </a>
+                </li>
+            </ul>
+        </div>
+     </header>
+     <!-- Body Section -->
+      <!-- Add car -->
+       <section class="add-car-section">
+         <div class="left-section">
+            <img src="./images/addCar.jpg" alt="">
+         </div>
+         <div class="right-section">
+            <h1 style="color: #fff;">Add Your Car</h1>
+            <form id="addCarForm">
+                <div class="input-group">
+                    <label class="form-label" for="carMake">Make:</label>
+                    <input class="form-input" type="text" id="carMake" placeholder="Enter your car make">
+                    <div id="carMakeError" class="error-message">Please enter your car make.</div>
+                </div>
+                <div class="input-group">
+                    <label class="form-label" for="carModel">Model:</label>
+                    <input class="form-input" type="text" id="carModel" placeholder="Enter your car model">
+                    <div id="carModelError" class="error-message">Please enter your car model.</div>
+                </div>
+                <div class="input-group">
+                    <label class="form-label" for="carYear">Year:</label>
+                    <input class="form-input" type="number" id="carYear" placeholder="Enter the year of the car">
+                    <div id="carYearError" class="error-message">Please enter the year of the car.</div>
+                </div>
+                <div class="input-group">
+                    <label class="form-label" for="carMileage">Mileage:</label>
+                    <input class="form-input" type="text" id="carMileage" placeholder="Enter the car's mileage">
+                    <div id="carMileageError" class="error-message">Please enter the car's mileage.</div>
+                </div>
+                <div class="input-group">
+                    <label class="form-label" for="carLocation">Location:</label>
+                    <input class="form-input" type="text" id="carLocation" placeholder="Enter the car's location">
+                    <div id="carLocationError" class="error-message">Please enter the car's location.</div>
+                </div>
+                <div class="input-group">
+                    <label class="form-label" for="carPrice">Price:</label>
+                    <input class="form-input" type="number" id="carPrice" placeholder="Enter the car's price">
+                    <div id="carPriceError" class="error-message">Please enter the car's price.</div>
+                </div>
+                <button type="button" id="addCarBtn">Add Car</button>
+            </form>                 
+         </div>
+       </section>
+
+     <!-- Footer Section -->
+      <footer class="footer-section">
+        <p>&copy; 2024 Online Car Sale. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@onlinecarsale.com">info@onlinecarsale.com</a></p>
+      </footer>
+
+      <!-- Script -->
+       <script src="./js/index.js"></script>
+       <script src="./js/addCar.js"></script>
+</body>
+</html>
